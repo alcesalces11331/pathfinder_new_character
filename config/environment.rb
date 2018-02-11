@@ -1,0 +1,1 @@
+require_relative '../concerns/module.init'
