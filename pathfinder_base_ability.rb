@@ -1,6 +1,9 @@
 class Base_Stats
-	# Here we will instantiate the universe. Welcome to the Matrix.
-	@@base_stats = {
+
+	attr_accessor :race, :class, :name
+
+	def initialize
+		@base_stats = {
 		STR: 10,
 		DEX: 10,
 		CON: 10,
@@ -8,4 +11,11 @@ class Base_Stats
 		WIS: 10,
 		CHA: 10
 	}
+
 end
+
+class Race < Base_Stats
+	include Base_Stats::initialize
+	
+end 
+
